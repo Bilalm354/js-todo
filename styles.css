@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    text-align: center;
+    background: #1E1E1E;
+}
+
+
+.header {
+    text-align: center;
+    background: #1E1E1E;
+    color: #788CDE;
+    padding: 1em 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90vw;
+    justify-content: center;
+}
+
+
+
+/* ADD TASK*/
+.input-box {
+
+    width: 100%;
+    background: #262626;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    height: 4em;
+}
+
+.input-box button {
+    float: right;
+    height: 2em;
+    font-size: 1.3em;
+    background: none;
+    border: none;
+    color: #778ADC;
+    padding-right: 0.80em;
+}
+
+#userInput {
+    float: left;
+    text-align: left;
+    font-size: 1em;
+    color: #778ADC;
+    background: #262626;
+    border: none;
+    border-radius: 0.4em;
+    width: 90%;
+    padding: 1em;
+    /*    text-indent: 1em;*/
+}
+
+
+
+::placeholder {
+    color: #778ADC;
+}
+
+ul {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    color: white;
+    padding: 1.5em;
+    background: #323232;
+    border-radius: 0.4em;
+    margin: 0.2em 0;
+    font-size: 0.8em;
+    text-indent: 0.5em;
+}
+
+li:hover {
+    background: #36373D;
+}
+
+li button {
+    background: none;
+    float: right;
+    border: none;
+    font-size: 1.1em;
+    color: white;
+}
+
+/* The delete class is add to items when delete is clicked and then the display none makes the item dissapear*/
+.delete {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.5em;
+    padding: 0.5em 0;
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    body {
+        font-size: 44px;
+    }
+    
+    #userInput {
+        width: 80%;
+    }
+    
+}
